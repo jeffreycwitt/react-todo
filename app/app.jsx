@@ -8,6 +8,8 @@ var TodoApp = require("TodoApp");
 var actions = require("actions");
 var store = require("configureStore").configure();
 var TodoAPI = require("TodoAPI");
+
+
 store.subscribe(() => {
 	var state = store.getState();
 	console.log('New state', state);
